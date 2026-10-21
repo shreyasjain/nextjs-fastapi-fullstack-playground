@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from database import create_db_and_tables
-from backend.ai_document_analyzer import router as analyzer_router
+from projects.ai_document_analyzer import router as analyzer_router
 
 app = FastAPI(title="AI Projects API")
 
