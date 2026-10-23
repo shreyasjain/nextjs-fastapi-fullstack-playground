@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from database import create_db_and_tables
 from projects.ai_document_analyzer import router as analyzer_router
 from projects.ai_research_agent import router as research_router
+from projects.ai_customer_support import router as customer_support_router
 
 app = FastAPI(title="AI Projects API")
 
@@ -21,6 +22,7 @@ app.add_middleware(
 
 app.include_router(analyzer_router)
 app.include_router(research_router)
+app.include_router(customer_support_router)
 
 
 @app.on_event("startup")
