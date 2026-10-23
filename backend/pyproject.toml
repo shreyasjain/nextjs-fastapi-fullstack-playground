@@ -12,5 +12,6 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "python-multipart>=0.0.20",
     "sqlmodel>=0.0.34",
+    "tavily-python>=0.8.5",
     "uvicorn[standard]>=0.39.0",
 ]
