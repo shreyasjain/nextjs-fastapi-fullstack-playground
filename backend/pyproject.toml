@@ -3,9 +3,11 @@ name = "ai-document-assistant"
 version = "0.1.0"
 requires-python = ">=3.9"
 dependencies = [
+    "dotenv>=0.9.9",
     "fastapi[standard]>=0.128.8",
     "numpy>=2.0.2",
     "openai>=2.48.0",
+    "psycopg>=3.2.13",
     "pymupdf>=1.26.5",
     "python-dotenv>=1.2.1",
     "python-multipart>=0.0.20",
